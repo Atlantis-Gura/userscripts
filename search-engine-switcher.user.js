@@ -29,6 +29,7 @@
 // @match        *://quora.com/search*
 // @match        *://www.reddit.com/search*
 // @match        *://reddit.com/search*
+// @match        *://linux.do/search*
 // @license      MIT
 // @grant        unsafeWindow
 // @grant        window.onload
@@ -123,7 +124,6 @@ const urlMapping = [
     keyName: "q",
     testUrl: /https:\/\/www.zhihu.com\/search.*/,
   },
-
   {
     name: "小红书",
     searchUrl: "https://www.xiaohongshu.com/search_result?keyword=",
