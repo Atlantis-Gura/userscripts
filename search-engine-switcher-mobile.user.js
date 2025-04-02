@@ -29,6 +29,7 @@
 // @match        *://quora.com/search*
 // @match        *://www.reddit.com/search*
 // @match        *://reddit.com/search*
+// @match        *://linux.do/search*
 // @license      MIT
 // @grant        unsafeWindow
 // @grant        window.onload
