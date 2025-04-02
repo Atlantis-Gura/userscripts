@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         搜索引擎切换器 · 改二（移动端）
-// @version      1.3.1
+// @version      1.3.2
 // @description  用于快速切换搜索引擎。有漂亮的高斯模糊外观和深色模式适配。当您滚动网页时，侧栏会自动收起，而当鼠标靠近时，侧栏则会弹出。您可以修改脚本以添加或重新排序搜索引擎。
 // @author       Atlantis-Gura
 // @originAuthor shunz, Corlius
@@ -41,6 +41,12 @@
 // 搜索网址配置
 const urlMapping = [
   {
+    name: "LINUX DO",
+    searchUrl: "https://linux.do/search?q=",
+    keyName: "q",
+    testUrl: /(?:www\.)?linux\.do\/search/i,
+  },
+  {
     name: "V2EX",
     searchUrl: "https://www.google.com/search?q=site:v2ex.com/t%20",
     keyName: "q",
@@ -69,6 +75,12 @@ const urlMapping = [
     searchUrl: "https://www.youtube.com/results?search_query=",
     keyName: "search_query",
     testUrl: /https:\/\/www.youtube.com\/results.*/,
+  },
+  {
+    name: "B站",
+    searchUrl: "https://search.bilibili.com/all?keyword=",
+    keyName: "keyword",
+    testUrl: /https:\/\/search.bilibili.com\/all.*/,
   },
   {
     name: "Google",
@@ -111,12 +123,6 @@ const urlMapping = [
     searchUrl: "https://www.zhihu.com/search?q=",
     keyName: "q",
     testUrl: /https:\/\/www.zhihu.com\/search.*/,
-  },
-  {
-    name: "B站",
-    searchUrl: "https://search.bilibili.com/all?keyword=",
-    keyName: "keyword",
-    testUrl: /https:\/\/search.bilibili.com\/all.*/,
   },
 ];
 
